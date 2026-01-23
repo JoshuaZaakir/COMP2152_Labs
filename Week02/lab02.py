@@ -22,6 +22,3 @@ else:
         print("Scissors beats Paper - You win!")
     else:
         print("You lose!")
-
-
-
