@@ -42,12 +42,12 @@ for moves in test_moves:
 # Part A: Brute Force with Nested Loops
     def two_sum_brute_force(numbers, target): # [3, 11, 15, 2, 7] target = 9
     # Outer loop: i from 0 to len(numbers)
-    for i in range(len(numbers)):
+        for i in range(len(numbers)):
     # Inner loop: j from i+1 to len(numbers)
-        for j in range (i + 1, len(numbers)):
-            if numbers[i] + numbers[j] == target:
-                return (i, j)
-    return None
+            for j in range (i + 1, len(numbers)):
+                if numbers[i] + numbers[j] == target:
+                    return (i, j)
+            return None
     # TODO: Use nested loops to find the pair
     # Outer loop: i from 0 to len(numbers)
     # Inner loop: j from i+1 to len(numbers)
